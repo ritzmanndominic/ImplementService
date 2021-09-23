@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "name": "name",
+      "price": 79.99,
+      "description": "description"
+    }
+  ],
+
+  "profile": {
+    "name": "typicode"
+  }
+}
