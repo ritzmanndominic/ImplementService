@@ -1,10 +1,64 @@
 {
-  "products": [
+  "posts": [
     {
-      "productId": 1,
-      "name": "name",
-      "price": 79.99,
-      "description": "description"
+      "id": 1,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2021_26/image-119456--4587306.jpg?itok=DvdaVBP0",
+      "name": "Macbook pro 2021",
+      "price": "1599.99 Fr",
+      "description": "Macbook pro 2021 13,3'' Display, M1 Chip, 17h Battery life, 8GB Ram, 256GB - 512GB Memory, 720p HD Camera, 6K / 60Hz"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2020_19/image-116728--4576733.png?itok=V3BLfDTD",
+      "name": "Macbook Air",
+      "price": "1099.99 Fr",
+      "description": "Macbook Air, 13,3'' Display, M1 Chip, 15h Battery Life, 8GB Ram, 256GB - 512GB Memory, 720p HD Camera"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2019_42/image-115099--4572651.png?itok=vpLO2WfF",
+      "name": "Macbook pro 2021",
+      "price": "2599.99 Fr",
+      "description": "Macbook pro 2021 16'' Display, M1 Chip, 17h Battery life, 16GB - 64GB Ram, 512GB - 1TB Memory, 720p HD Camera, 6K / 60Hz"
+    },
+    {
+      "id": 4,
+      "imgSrc": "https://www.reviewgeek.com/p/uploads/2021/04/71b49084.jpg?width=1200",
+      "name": "IMac 24 ''",
+      "price": "1449.99 Fr",
+      "description": "IMac, 24'' Display 4.5K, M1 Chip, 256GB - 2TB Memory, 8GB - 16GB Ram, 1080p HD Camera, 4,46kg weigth"
+    }
+    ,
+    {
+      "id": 5,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2018_44/image-108663--3531425.jpg?itok=xXe4_6OV",
+      "name": "Macbook Mini",
+      "price": "779.99 Fr",
+      "description": "Macbook Mini, M1 Chip, 8 Core, 8GB - 16GB Ram, 256GB - 2TB Memory, 6K / 60Hz, 1.2KG weigth"
+    }
+    ,
+    {
+      "id": 6,
+      "imgSrc": "https://img.phonandroid.com/2021/07/apple-pro-display-xdr.jpg",
+      "name": "Macbook Pro XDR",
+      "price": "5399 Fr",
+      "description": "Macbook pro XDR, Default glass or Nanotexture glass, 32'' Display, 6K / 60Hz, 7.48KG - 11.78KG (with bracket) weigth"
+    }
+    ,
+    {
+      "id": 7,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2021_26/image-119456--4587306.jpg?itok=DvdaVBP0",
+      "name": "Macbook pro 2021",
+      "price": "2299.99 Fr",
+      "description": "Macbook pro 2021 13,3'' Display, M1 chip, 17h Battery life, 8GB Ram, 256GB Memory, 720p HD Camera, 6K / 60Hz"
+    }
+    ,
+    {
+      "id": 8,
+      "imgSrc": "https://www.maclife.de/media/maclife/styles/tec_frontend_fullscreen/public/images/editors/2021_26/image-119456--4587306.jpg?itok=DvdaVBP0",
+      "name": "Macbook pro 2021",
+      "price": "2299.99 Fr",
+      "description": "Macbook pro 2021 13,3'' Display, M1 chip, 17h Battery life, 8GB Ram, 256GB Memory, 720p HD Camera, 6K / 60Hz"
     }
   ],
 
