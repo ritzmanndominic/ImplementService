@@ -1,26 +1,22 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Form, FormControl, Row } from "react-bootstrap";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import ProductCard from "./Card";
 import { TypeProduct } from "./Types/TypeProduct";
 import { SearchContext } from "./Context/SearchContext";
+import ProductService from "./Services/ProductService";
 
 function ProductPage() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [productList, setProducts] = useState<TypeProduct[]>([]);
   const { search, searchProduct } = useContext(SearchContext);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  useEffect(() => {
-    fetch("http://localhost:3004/posts")
-      .then((response) => {
-        return response.json();
-      })
-      .then((myjson) => {
-        setProducts(myjson);
-      });
-  }, []);
+  const productService = new ProductService();
+  productService
+    .getAllProducts()
+    .then((response) => response.data)
+    .then((post) => setProducts(post));
 
   return (
     <>

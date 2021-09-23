@@ -6,20 +6,15 @@ import { Col, Container, Row } from "react-bootstrap";
 import SingleProductWithBackButton from "./CardSingleProductPage";
 import { TypeProduct } from "./Types/TypeProduct";
 import { TypeProductId } from "./Types/TypeProductId";
+import ProductService from "./Services/ProductService";
 
 function SingleProductPage() {
   const { id } = useParams<TypeProductId>();
   const [productList, setProducts] = useState<TypeProduct>({} as TypeProduct);
 
-  useEffect(() => {
-    fetch("http://localhost:3004/posts/" + id)
-      .then((response) => {
-        return response.json();
-      })
-      .then((myjson) => {
-        setProducts(myjson);
-      });
-  }, [id]);
+  ProductService("posts/" + id)
+    .then((response) => response.data)
+    .then((post) => setProducts(post));
 
   return (
     <>
