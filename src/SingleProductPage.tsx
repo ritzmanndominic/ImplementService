@@ -12,10 +12,10 @@ function SingleProductPage() {
   const { id } = useParams<TypeProductId>();
   const [productList, setProducts] = useState<TypeProduct>({} as TypeProduct);
 
-  ProductService("posts/" + id)
+  /*ProductService("posts/" + id)
     .then((response) => response.data)
     .then((post) => setProducts(post));
-
+*/
   return (
     <>
       <Container>

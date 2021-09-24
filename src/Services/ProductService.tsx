@@ -10,8 +10,8 @@ class ProductService {
     return this.client.get<TypeProduct[]>("");
   }
 
-  getSingleProducts(){
-    
+  getSingleProducts(url:string){
+    return this.client.get<TypeProduct[]>(url)
   }
 }
 
