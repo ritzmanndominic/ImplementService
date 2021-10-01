@@ -1,1 +1,7 @@
-{}
+{
+    "projectId": "ta1w4d",
+    "component": {
+        "componentFolder": "./src/Testing",
+        "testFiles": "**/*.test.{ts,tsx}"
+    }
+}
