@@ -6,30 +6,33 @@ import SingleProductPage from "./SingleProductPage";
 import landingPage from "./LandingPage";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import SearchProvider from "./Context/SearchContext";
+import Formular from "./Formular";
 
 function App() {
   return (
     <div className="App">
-       <SearchProvider>
-      <header>
-        <Navbar bg="light-secondary" expand="lg">
-          <Container>
-            <Navbar.Brand href="/"></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/productPage">Products</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
-     
+      <SearchProvider>
+        <header>
+          <Navbar bg="light-secondary" expand="lg">
+            <Container>
+              <Navbar.Brand href="/"></Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/Signup">Signup</Nav.Link>
+                  <Nav.Link href="/productPage">Products</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </header>
+
         <BrowserRouter>
           <Switch>
             <Route exact path={"/"} component={landingPage}></Route>
             <Route exact path={"/ProductPage"} component={productPage}></Route>
+            <Route exact path={"/Signup"} component={Formular}></Route>
             <Route
               exact
               path={"/singleProduct/:id"}

@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Children, createContext, FC, useState } from "react";
+import {createContext, FC, useState } from "react";
 
 export type SearchContextState = {
   search: string;

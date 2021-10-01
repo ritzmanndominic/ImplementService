@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useParams } from "react-router";
@@ -12,10 +12,16 @@ function SingleProductPage() {
   const { id } = useParams<TypeProductId>();
   const [productList, setProducts] = useState<TypeProduct>({} as TypeProduct);
 
-  /*ProductService("posts/" + id)
+  const productService = new ProductService();
+
+  useEffect(() => {
+    productService
+    .getSingleProducts(id)
     .then((response) => response.data)
     .then((post) => setProducts(post));
-*/
+  }, []);
+ 
+
   return (
     <>
       <Container>

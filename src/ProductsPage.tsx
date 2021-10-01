@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Form, FormControl, Row } from "react-bootstrap";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import ProductCard from "./Card";
 import { TypeProduct } from "./Types/TypeProduct";
 import { SearchContext } from "./Context/SearchContext";
@@ -13,10 +13,13 @@ function ProductPage() {
   const { search, searchProduct } = useContext(SearchContext);
 
   const productService = new ProductService();
-  productService
+  useEffect(() => {
+    productService
     .getAllProducts()
     .then((response) => response.data)
     .then((post) => setProducts(post));
+  }, []);
+  
 
   return (
     <>

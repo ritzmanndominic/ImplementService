@@ -11,7 +11,7 @@ class ProductService {
   }
 
   getSingleProducts(url:string){
-    return this.client.get<TypeProduct[]>(url)
+    return this.client.get<TypeProduct>(url)
   }
 }
 
