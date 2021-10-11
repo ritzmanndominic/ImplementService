@@ -7,6 +7,7 @@ import landingPage from "./LandingPage";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import SearchProvider from "./Context/SearchContext";
 import Formular from "./Formular";
+import Login from "./Login";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/Signup">Signup</Nav.Link>
+                  <Nav.Link href="/Create">Create</Nav.Link>
+                  <Nav.Link href="/Login">Login</Nav.Link>
                   <Nav.Link href="/productPage">Products</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -32,7 +34,8 @@ function App() {
           <Switch>
             <Route exact path={"/"} component={landingPage}></Route>
             <Route exact path={"/ProductPage"} component={productPage}></Route>
-            <Route exact path={"/Signup"} component={Formular}></Route>
+            <Route exact path={"/Create"} component={Formular}></Route>
+            <Route exact path={"/Login"} component={Login}></Route>
             <Route
               exact
               path={"/singleProduct/:id"}

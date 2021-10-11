@@ -17,7 +17,7 @@ function ProductCard(props: TypeProduct) {
         <u>
           <h5>{props.price}</h5>
         </u>
-        <h5>{props.id}</h5>
+        <h5 className="id">{props.id}</h5>
         <h5>{props.description}</h5>{" "}
         <Button
           className="btn btn-info"
