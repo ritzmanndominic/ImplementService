@@ -1,7 +1,6 @@
 import axios from "axios";
 import { TypeProduct } from "../Types/TypeProduct";
 import {postProduct} from "../Formular"
-import {Signup} from "../Login"
 
 class ProductService {
   private client = axios.create({

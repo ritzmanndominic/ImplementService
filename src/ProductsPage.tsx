@@ -12,13 +12,14 @@ function ProductPage() {
   const [productList, setProducts] = useState<TypeProduct[]>([]);
   const { search, searchProduct } = useContext(SearchContext);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const productService = new ProductService();
   useEffect(() => {
     productService
     .getAllProducts()
     .then((response) => response.data)
     .then((post) => setProducts(post));
-  }, []);
+  }, [productService]);
   
 
   return (
