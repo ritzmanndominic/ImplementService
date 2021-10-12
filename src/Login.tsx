@@ -48,11 +48,12 @@ export default function Login() {
         }}
       >
         {({ errors, touched }) => (
+          
           <Form>
             <div className="formular">
               <Row>
                 <Col>
-                  <label htmlFor="firstname">firstname</label>
+                  <label htmlFor="firstname">Firstname</label>
                   <Field
                     id="firstname"
                     name="firstname"
@@ -64,7 +65,7 @@ export default function Login() {
                   ) : null}
                 </Col>
                 <Col>
-                  <label htmlFor="lastname">lastname</label>
+                  <label htmlFor="lastname">Lastname</label>
                   <Field
                     id="lastname"
                     name="lastname"
@@ -89,7 +90,7 @@ export default function Login() {
                   ) : null}
                 </Col>
                 <Col>
-                  <label htmlFor="password">password</label>
+                  <label htmlFor="password">Password</label>
                   <Field id="password" name="password" type="password" required />
                   {errors.password && touched.password ? (
                     <div>{errors.password}</div>

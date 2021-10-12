@@ -12,7 +12,6 @@ function SingleProductPage() {
   const { id } = useParams<TypeProductId>();
   const [productList, setProducts] = useState<TypeProduct>({} as TypeProduct);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const productService = new ProductService();
 
   useEffect(() => {
@@ -20,7 +19,7 @@ function SingleProductPage() {
     .getSingleProducts(id)
     .then((response) => response.data)
     .then((post) => setProducts(post));
-  }, [id, productService]);
+  }, []);
  
 
   return (
